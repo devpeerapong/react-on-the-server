@@ -1,0 +1,28 @@
+{
+  "name": "myjournal-next-app-router",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/joy": "5.0.0-beta.11",
+    "@prisma/client": "5.4.2",
+    "@tanstack/react-query": "^5.0.0",
+    "marked": "^9.1.2",
+    "next": "13.5.6",
+    "prisma": "^5.4.2",
+    "react": "next",
+    "react-dom": "next"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6"
+  }
+}

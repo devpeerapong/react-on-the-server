@@ -1,0 +1,7 @@
+packages:
+  - 01-myjournal-mpa
+  - 02-1-myjournal-api
+  - 02-2-myjournal-spa
+  - 03-myjournal-ssr
+  - 04-myjournal-next
+  - 05-myjournal-next-app-router

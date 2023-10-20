@@ -9,7 +9,8 @@ const article = JSON.parse(document.getElementById("__DATA__").innerHTML);
 const queryClient = new QueryClient();
 queryClient.setQueryData(["articles", article.id], article);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.hydrateRoot(
+  document.getElementById("root"),
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <ArticlePage id={article.id} />

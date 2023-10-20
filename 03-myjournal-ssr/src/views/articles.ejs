@@ -19,26 +19,10 @@
         >
       </div>
     </nav>
-    <div class="container mx-auto py-4">
-      <div class="mb-2 text-end">
-        <a class="btn btn-primary" href="/add"> Add article </a>
-      </div>
-      <ul class="list-group list-group-flush">
-        <% data.forEach(function(article){ %>
-        <li class="list-group-item px-0">
-          <h4 class="text-primary fw-bolder">
-            <a
-              class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-              href="/<%= article.id %>"
-              ><%= article.title %></a
-            >
-          </h4>
-          <p class="text-secondary mb-0">
-            <small><%= article.createdAt.toDateString() %></small>
-          </p>
-        </li>
-        <% }); %>
-      </ul>
-    </div>
+    <div id="root"></div>
+    <script id="__DATA__" type="application/json">
+      <%- JSON.stringify(data) %>
+    </script>
+    <script src="/dist/articles.js"></script>
   </body>
 </html>

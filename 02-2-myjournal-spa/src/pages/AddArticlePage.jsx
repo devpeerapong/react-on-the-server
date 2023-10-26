@@ -4,7 +4,7 @@ import Container from "@mui/joy/Container";
 import Input from "@mui/joy/Input";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import * as api from "../api";
+import { api } from "../api";
 import { Editor } from "../components/Editor";
 
 export function AddArticlePage() {

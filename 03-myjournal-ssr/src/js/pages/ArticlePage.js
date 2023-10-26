@@ -3,7 +3,7 @@ import Container from "@mui/joy/Container";
 import Typography from "@mui/joy/Typography";
 import { useQuery } from "@tanstack/react-query";
 import { parse } from "marked";
-import * as api from "../api";
+import { api } from "../api";
 
 export function ArticlePage({ id }) {
   const { data, isLoading } = useQuery({

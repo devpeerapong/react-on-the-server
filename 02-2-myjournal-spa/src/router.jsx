@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import * as api from "./api";
+import { api } from "./api";
 import { AddArticlePage } from "./pages/AddArticlePage";
 import { ArticleListPage } from "./pages/ArticleListPage";
 import { ArticlePage } from "./pages/ArticlePage";

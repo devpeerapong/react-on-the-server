@@ -4,7 +4,7 @@ import Typography from "@mui/joy/Typography";
 import { useQuery } from "@tanstack/react-query";
 import { parse } from "marked";
 import { useParams } from "react-router-dom";
-import * as api from "../api";
+import { api } from "../api";
 
 export function ArticlePage() {
   const { id } = useParams();

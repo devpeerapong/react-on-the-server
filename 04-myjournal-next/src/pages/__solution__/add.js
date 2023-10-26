@@ -5,7 +5,7 @@ import Input from "@mui/joy/Input";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import * as api from "../api";
+import { api } from "@/api";
 import { Editor } from "../components/Editor";
 
 export default function AddArticlePage() {

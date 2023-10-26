@@ -8,7 +8,7 @@ const load = async () => {
     await prisma.article.deleteMany();
     console.info("Deleted records in articles table");
 
-    await prisma.article.createMany({ data: articles });
+    await Promise.all(articles.map((data) => prisma.article.create({ data })));
     console.log("Added articles data");
   } catch (e) {
     console.error(e);

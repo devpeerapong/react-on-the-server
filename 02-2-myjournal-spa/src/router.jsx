@@ -4,11 +4,13 @@ import * as api from "./api";
 import { AddArticlePage } from "./pages/AddArticlePage";
 import { ArticleListPage } from "./pages/ArticleListPage";
 import { ArticlePage } from "./pages/ArticlePage";
+import { ErrorDisplay } from "./components/ErrorDisplay";
 
 export const router = createBrowserRouter([
   {
     path: "",
     element: <App />,
+    errorElement: <ErrorDisplay />,
     children: [
       { path: "/add", element: <AddArticlePage /> },
       { path: "/:id", element: <ArticlePage /> },

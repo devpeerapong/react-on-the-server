@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { PrismaClient } from "@prisma/client";
-import { articles } from "./data.js";
+import { articles } from "./data.mjs";
 const prisma = new PrismaClient();
 
 const load = async () => {

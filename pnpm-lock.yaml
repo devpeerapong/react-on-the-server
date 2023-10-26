@@ -212,6 +212,9 @@ importers:
       '@tanstack/react-query':
         specifier: ^5.0.5
         version: 5.0.5(react-dom@18.2.0)(react@18.2.0)
+      dotenv:
+        specifier: ^16.3.1
+        version: 16.3.1
       marked:
         specifier: ^9.1.2
         version: 9.1.2
@@ -255,6 +258,9 @@ importers:
       '@tanstack/react-query':
         specifier: ^5.0.5
         version: 5.0.5(react-dom@18.3.0-canary-9617d39ec-20231018)(react@18.3.0-canary-9617d39ec-20231018)
+      dotenv:
+        specifier: ^16.3.1
+        version: 16.3.1
       marked:
         specifier: ^9.1.2
         version: 9.1.2

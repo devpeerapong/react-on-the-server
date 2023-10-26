@@ -4,7 +4,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf dist && rspack build && SWCRC=true node -r @swc-node/register src/server.js",
-    "seed": "node --loader @swc-node/register/esm prisma/seed.js"
+    "seed": "prisma db push && prisma generate && node --loader @swc-node/register/esm prisma/seed.mjs"
   },
   "keywords": [],
   "author": "",

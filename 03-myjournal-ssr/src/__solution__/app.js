@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import morgan from "morgan";
 
-import * as db from "./db.js";
+import { db } from "./db.js";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { renderToString } from "react-dom/server";

@@ -3,7 +3,7 @@ import Button from "@mui/joy/Button";
 import Container from "@mui/joy/Container";
 import Link from "next/link";
 import { ArticleList } from "@/components/ArticleList";
-import * as db from "@/db";
+import { db } from "@/db";
 
 /**
  * @type {import("next").Metadata}

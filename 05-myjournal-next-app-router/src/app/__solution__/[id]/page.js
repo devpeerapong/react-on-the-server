@@ -1,4 +1,4 @@
-import * as db from "@/db";
+import { db } from "@/db";
 import Container from "@mui/joy/Container";
 import Typography from "@mui/joy/Typography";
 import { parse } from "marked";

@@ -4,7 +4,7 @@ import Container from "@mui/joy/Container";
 import Head from "next/head";
 import Link from "next/link";
 import { ArticleList } from "../components/ArticleList";
-import * as db from "../db";
+import { db } from "../db";
 
 /**
  *

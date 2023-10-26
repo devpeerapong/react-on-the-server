@@ -1,4 +1,4 @@
-import * as db from "@/db";
+import { db } from "@/db";
 import { redirect } from "next/navigation";
 import Container from "@mui/joy/Container";
 import { ArticleEditor } from "./ArticleEditor";

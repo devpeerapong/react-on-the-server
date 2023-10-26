@@ -3,7 +3,7 @@ import { parse } from "marked";
 import path from "path";
 import morgan from "morgan";
 
-import * as db from "./db.js";
+import { db } from "./db.js";
 
 const app = express();
 app.use(morgan("tiny"));

@@ -6,35 +6,37 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { api } from "@/api";
-import { Editor } from "../components/Editor";
+import { Editor } from "@/components/Editor";
 
 export default function AddArticlePage() {
   const [title, setTitle] = useState("");
   const [value, onChange] = useState("");
   const router = useRouter();
 
-  return (
-    <Container sx={{ py: 2 }}>
-      <Head>Add Article | My Journal</Head>
-      <Input
-        sx={{ mb: 2 }}
-        size="lg"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        placeholder="Title"
-      />
-      <Editor initialValue={value} onChange={onChange} />
-      <Box textAlign="end" sx={{ mt: 4 }}>
-        <Button
-          onClick={async () => {
-            await api.createArticle({ title, body: value });
+  async function onSubmit(event) {
+    event.preventDefault();
 
-            router.push("/");
-          }}
-        >
-          Submit
-        </Button>
-      </Box>
-    </Container>
+    await api.createArticle({ title, body: value });
+
+    router.push("/");
+  }
+
+  return (
+    <form onSubmit={onSubmit}>
+      <Container sx={{ py: 2 }}>
+        <Head>Add Article | My Journal</Head>
+        <Input
+          sx={{ mb: 2 }}
+          size="lg"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Title"
+        />
+        <Editor initialValue={value} onChange={onChange} />
+        <Box textAlign="end" sx={{ mt: 4 }}>
+          <Button type="submit">Submit</Button>
+        </Box>
+      </Container>
+    </form>
   );
 }

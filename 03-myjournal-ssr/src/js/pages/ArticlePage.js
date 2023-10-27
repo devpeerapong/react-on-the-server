@@ -5,6 +5,12 @@ import { useQuery } from "@tanstack/react-query";
 import { parse } from "marked";
 import { api } from "../api";
 
+/**
+ *
+ * @param {object} props
+ * @param {string} props.id
+ * @returns
+ */
 export function ArticlePage({ id }) {
   const { data, isLoading } = useQuery({
     queryKey: ["articles", id],

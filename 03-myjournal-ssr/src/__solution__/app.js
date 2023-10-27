@@ -28,7 +28,8 @@ app.post("/add", async (req, res) => {
 });
 
 app.get("/:id", async (req, res) => {
-  const data = await db.getArticle(req.params.id);
+  const { id } = req.params;
+  const data = await db.getArticle(id);
 
   if (!data) {
     res.render("404");
@@ -36,11 +37,11 @@ app.get("/:id", async (req, res) => {
   }
 
   const queryClient = new QueryClient();
-  queryClient.setQueryData(["articles", req.params.id], data);
+  queryClient.setQueryData(["articles", id], data);
 
   const SSR = renderToString(
     <QueryClientProvider client={queryClient}>
-      <ArticlePage />
+      <ArticlePage id={id} />
     </QueryClientProvider>
   );
 

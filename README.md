@@ -13,12 +13,24 @@ The primary objectives of this workshop are to:
 
 ## Requirement
 
-- NodeJS >= 18
+- NodeJS >= 18 - Installing this via [fnm](https://github.com/Schniz/fnm)
+
+  ```sh
+  curl -fsSL https://fnm.vercel.app/install | bash
+  fnm use 18
+  ```
+
 - PNPM >= 8
+
+  ```sh
+  corepack enable
+  corepace prepare pnpm@latest --activate
+  ```
 
 ## Initial Setup
 
-- Folk this repository
+- Folk this repository and clone it to your computer
+- run `pnpm install` to install the dependency
 - Create [Vercel Account](https://vercel.com/docs/accounts/create-an-account) using Github
 - [Create a project](https://vercel.com/docs/getting-started-with-vercel/import) and link it to the repository
 - [Configure project Root Directory](https://vercel.com/docs/deployments/configure-a-build#root-directory) to be `04-myjournal-next`

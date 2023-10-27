@@ -12,7 +12,7 @@ import { ArticlePage } from "./js/pages/ArticlePage.js";
 const app = express();
 app.use(morgan("tiny"));
 app.set("view engine", "ejs");
-app.set("views", "./src/views/__solution__");
+app.set("views", "./src/views");
 app.use("/public", express.static(path.resolve("public")));
 app.use("/dist", express.static(path.resolve("dist")));
 app.use(express.urlencoded({ extended: true }));

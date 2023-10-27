@@ -5,6 +5,7 @@ module.exports = {
   entry: {
     articles: "./src/client/articles.js",
     articleId: "./src/client/articleId.js",
+    add: "./src/client/add.js",
   },
   output: {
     filename: "[name].js",
@@ -17,8 +18,5 @@ module.exports = {
         type: "jsx",
       },
     ],
-  },
-  externalsPresets: {
-    node: true,
   },
 };

@@ -1,7 +1,6 @@
 "use client";
 
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
-
+import { useFormStatus } from "react-dom";
 import Button from "@mui/joy/Button";
 
 export function SubmitButton() {

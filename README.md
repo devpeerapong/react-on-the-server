@@ -24,7 +24,7 @@ The primary objectives of this workshop are to:
 
   ```sh
   corepack enable
-  corepace prepare pnpm@latest --activate
+  corepack prepare pnpm@latest --activate
   ```
 
 ## Initial Setup
